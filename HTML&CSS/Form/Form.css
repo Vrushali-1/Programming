@@ -1,0 +1,80 @@
+#Page{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover ;
+    background-position: 50% 50% ;
+    background-image: url("background.png");
+    ;
+
+
+}
+
+#Heading{
+    font-family: 'Black And White Picture',sans-serif;
+    font-size: 70px;
+    color: seagreen;
+    text-align: center;
+
+}
+
+.content{
+    background: rgba(0,0,0, 0.5);
+    height: 610px;
+    max-width: 590px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px dashed greenyellow;
+}
+
+table{
+     margin: 0 auto;
+     border-collapse:separate; 
+     border-spacing: 20px; 
+     font-family: 'Dosis',sans-serif;
+     
+}
+
+
+
+#Subheading{
+    font-size: 25px;
+    font-family:'Cabin Sketch', sans-serif;
+    color: mediumseagreen;
+
+   
+}
+
+.left{
+    text-align: left;
+}
+
+#checkbox{
+    text-align: left;
+    font-family: 'Dosis',sans-serif;
+}
+
+#radio{
+    text-align: left;
+    font-family: 'Dosis',sans-serif;
+}
+
+.textfeild{
+    width: 100%;
+    padding: 12px 20px;
+    font-family: 'Dosis',sans-serif;
+}
+
+#button{
+    width: 100%;
+    padding: 12px 20px;
+    font-family: 'Dosis',sans-serif;
+    color: saddlebrown;
+    font-weight: bold;
+}
