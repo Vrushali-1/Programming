@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st</title>
+</head>
+<body>
+
+    <script>
+               function square (x){
+                  return x * x;
+               }
+
+               function double (x){
+                   return x * 2;
+               }
+
+               function composedValue(f1,f2,value){
+                  return f1(f2(value));
+                
+               }
+
+               console.log(composedValue(square,double,5));
+               console.log(composedValue(square,double,2));
+    </script>
+    
+</body>
+</html>

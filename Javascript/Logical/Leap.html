@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+    <style>
+        .content{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="leap"></p>
+    <script>
+        function leap(){
+            var count=0;
+            for(var i=2020;count<=20;i++){
+                if(i%4==0){
+                   document.getElementById("leap").innerHTML+=i+" ";
+                   count++;
+                }
+                
+            }
+        }
+
+        leap();
+    </script>
+</body>
+</html>

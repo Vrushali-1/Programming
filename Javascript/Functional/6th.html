@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="text"></p>
+    <script>
+        
+        var result=[];
+        function map(array,f1){
+             
+            
+                   if(array.length===1){
+                         return f1(array);
+                   } else {
+                         return [f1(array[0])].concat(map(array.slice(1),f1));
+                   }
+                            
+              }
+
+              function square(x){
+                  return x * x;
+              }
+
+               var array=[1,2,3,4,5];
+               var result=map(array,square);
+               document.write(result);
+              
+    </script>
+</body>
+</html>

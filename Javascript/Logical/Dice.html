@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of times dice to be rolled</title>
+</head>
+<body>
+    <script>
+        function numRollsToGetSix(){
+            var count=0;
+            var six=5/6;
+            while(Math.random()<six){
+                count++;
+            }
+            return count;
+          
+        }
+
+        console.log(numRollsToGetSix());
+    </script>
+</body>
+</html>

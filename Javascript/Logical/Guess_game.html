@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        .content{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+                  <h1>Guessing game</h1>
+                  <input id="t1" placeholder="Guess the number"><br><br><br><input type="button" onclick="check()" value="Guess"><br>
+                  <h4 id="message"></h4>
+
+                  <script>
+
+                            var count=0;
+                            var entered =[];
+
+                            function check(){
+                                const secret_number=95;
+                                var number=Number(document.getElementById("t1").value);
+                                
+                        
+                                   if(number>secret_number){
+                                       document.getElementById("message").innerHTML=" Secret Number is smaller than your guess."
+                                   }else{
+                                    document.getElementById("message").innerHTML=" Secret Number is greater than your guess."
+                                   } 
+                                  
+                                if(entered.includes(number)==false){
+                                          entered.push(number);
+                                          count++;
+                                }
+                                
+                                if(number===secret_number){
+                                    document.getElementById("message").innerHTML="Congratulations you have guessed the number correctly!!<br/>Number of tries: "+count;
+                                    
+                                }
+                            }
+                  </script>
+    </div>
+
+</body>
+</html>

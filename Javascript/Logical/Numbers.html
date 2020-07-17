@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Of Numbers</title>
+</head>
+<body>
+    <script>
+        var strings=["1.2","2.3","3.4"];
+        console.log(numberArray(strings));
+        
+        function numberArray(strings){
+             var nums=[];
+             for(var i=0;i<strings.length;i++){
+                 nums[i]=Number(strings[i]);
+             }
+                   
+           return nums;
+        }
+
+           
+ </script>
+</body>
+</html>

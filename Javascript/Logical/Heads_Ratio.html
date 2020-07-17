@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Of heads in fraction</title>
+</head>
+<body>
+
+    <script>
+
+    function headsRatio(number){
+         
+        var array=[true,false];
+        var heads=0;
+        var fraction=0;
+        for(var i=0;i<number;i++){
+         var index=Math.round(Math.random());
+          if(array[index]==true){
+            heads++;
+          }
+        
+        }
+
+       fraction=heads/number;
+
+       return fraction;
+     }
+
+     console.log(headsRatio(10));
+     console.log(headsRatio(10));
+     console.log(headsRatio(10000));
+     console.log(headsRatio(10000000));
+    </script>
+
+    
+</body>
+</html>

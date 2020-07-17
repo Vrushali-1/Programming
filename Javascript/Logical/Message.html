@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Message</title>
+</head>
+<body>
+    <h1 id="message" style="text-align: center;"></h1>
+    <script>
+              
+               function message(){
+                   if(Math.random()<0.5){
+                       document.getElementById("message").innerHTML="Have a BAD day!";
+                   } else{
+                    document.getElementById("message").innerHTML="Have a GOOD day!";
+                   }
+               }
+
+               message();
+    </script>
+</body>
+</html>

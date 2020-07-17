@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum from the list</title>
+</head>
+<body>
+    <h3 id="max"></h3>
+    <script>
+              function maximum(list){
+                   var max=0;
+                   for(var i=0;i<list.length;i++){
+                         if(list[i]>max){
+                             max=list[i];
+                         }
+                   }
+                   return max;
+              }
+
+             var number= maximum([8,9,5,7,2]);
+             document.getElementById("max").innerHTML="Maximum is : "+number;
+    </script>
+</body>
+</html>

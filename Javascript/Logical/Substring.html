@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest Consecutive string not containing a nor b</title>
+</head>
+<body>
+    <script>
+        function longestToken(token){
+              
+              var subtoken,final="";
+              var substrings=[];
+              var max=0;
+              var count=0;
+              
+              for(var i=0;i<token.length;i++)
+              {
+                  if(token[i] ==='a'|| token[i] ==='b')
+                  {
+                    if(count>max){
+                         max=count;
+                         final=subtoken;
+                         subtoken="";
+                         count=0;
+                    }
+                  } 
+                  else 
+                  {
+                      subtoken+=token[i];
+                      count++;
+                  }
+              }
+            return final;
+        }
+
+        console.log(longestToken("ababcdababefgababhiab"));
+        console.log(longestToken("aba"));
+    </script>
+</body>
+</html>

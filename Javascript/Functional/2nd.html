@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@nd assignment</title>
+</head>
+<body>
+
+    <script>
+        
+
+        function square (x){
+             return x * x;
+        }
+
+        function double (x){
+            return x * 2;
+        }
+        
+        function compose(f1,f2){
+           return function(x){
+               return f1(f2(x));
+           };
+        }
+
+        var f1=compose(square,double);
+        console.log(f1(5));
+        console.log(f1(10));
+        var f2=compose(double,square);
+        console.log(f2(5));
+        console.log(f2(10));
+        
+
+        
+    </script>
+    
+</body>
+</html>

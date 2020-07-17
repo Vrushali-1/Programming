@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <style>
+       .content{
+           text-align: center;
+       }
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+      <input type="text" id="t1" placeholder="Enter Your Name"> &nbsp;&nbsp;&nbsp; <input type="button" onclick="greet()" value="Submit"><br>
+      <h4 id="heading"></h4>
+    </div>
+      <script>
+          function greet(){
+              var name=document.getElementById("t1").value;
+              document.getElementById("heading").innerHTML="Hello "+name+" !";
+          }
+      </script>
+</body>
+</html>

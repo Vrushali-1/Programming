@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <style>
+       .content{
+           text-align: center;
+       }
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+      <input type="text" id="t1" placeholder="Enter the number"> &nbsp;&nbsp;&nbsp; <input type="button" onclick="addition()" value="Submit"><br>
+      <h4 id="heading"></h4>
+    </div>
+      <script>
+          function addition(){
+              var number=Number(document.getElementById("t1").value);
+              var sum=0;
+              for(var i=1;i<=number;i++){
+                 if(i%3==0 || i%5==0){
+                     sum+=i;
+                 }
+              }
+              document.getElementById("heading").innerHTML="Addition is : "+sum;
+              
+          }
+      </script>
+</body>
+</html>

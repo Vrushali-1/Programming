@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+    <style>
+        .content{
+            text-align: center;
+        }
+    </style>
+</head>
+     
+<body>
+    <div class="content">
+        <p id="Mul"></p>
+
+    </div>
+
+    <script>
+        function prime(){
+            
+            for(var limit=2;limit<=100;limit++){
+                var flag=false;
+               for(var i=2;i<=limit;i++){
+                   if(limit%i===0 && i!==limit){
+                       flag=true;
+                   }
+               }
+               if(flag===false){
+                      
+                      document.getElementById("Mul").innerHTML+=limit+"<br/>";
+                      
+               }
+            }
+        }
+
+        prime();
+    </script>
+
+</body>
+</html>
