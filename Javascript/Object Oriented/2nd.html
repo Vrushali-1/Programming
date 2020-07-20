@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Assignment</title>
+</head>
+<body>
+    <script>
+        class Rectangle{
+            
+            constructor(width,height){
+                this.width=width;
+                this.height=height;
+            }
+
+        }
+
+        Rectangle.prototype.getArea=function(width,height){
+              return this.width * this.height;
+        }
+
+        var objOne=new Rectangle(20,10);
+        var objTwo=new Rectangle(30,15);
+
+
+        console.log("Area of object 1 : "+objOne.getArea());
+        console.log("Area of object 2 : "+objTwo.getArea());
+        
+        
+
+    </script>
+</body>
+</html>

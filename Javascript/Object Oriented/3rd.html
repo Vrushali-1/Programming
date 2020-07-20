@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Assignment</title>
+</head>
+<body>
+    <script>
+        class Rectangle{
+            
+            constructor(width,height){
+                this.width=width;
+                this.height=height;
+            }
+
+        }
+
+        Rectangle.prototype.getArea=function(width,height){
+              return this.width * this.height;
+        }
+
+        var r=new Rectangle(4,5);
+        r.height=50;
+        console.log("Area is : "+r.getArea());
+    </script>
+</body>
+</html>

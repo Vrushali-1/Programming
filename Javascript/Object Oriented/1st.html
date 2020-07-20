@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Assignment</title>
+</head>
+<body>
+    <script>
+        class Rectangle{
+            
+            constructor(width,height){
+                this.width=width;
+                this.height=height;
+            }
+
+        }
+
+        Rectangle.prototype.getArea=function(width,height){
+              return width * height;
+        }
+
+        var objOne=new Rectangle(20,10);
+        var objTwo=new Rectangle(30,15);
+
+
+        console.log(objOne);
+        console.log(objTwo);
+
+        objTwo.width=40;
+        objTwo.height=20;
+
+        console.log("Modified : "+ objTwo);
+        
+        
+
+    </script>
+</body>
+</html>

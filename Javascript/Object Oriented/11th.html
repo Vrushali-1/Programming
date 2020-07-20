@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11th assignment</title>
+</head>
+<body>
+    <script>
+         
+        class BankAccount{
+        
+          constructor(accountNumber,AccountHolderName,AccountBalance)
+          {
+             this.accountNumber=accountNumber;
+             this.AccountHolderName=AccountHolderName;
+             this.AccountBalance=AccountBalance;
+          }
+       
+        withdraw(amt){
+             
+            this.AccountBalance=this.AccountBalance-amt;
+       
+            if(this.AccountBalance>=0)
+               return this.AccountBalance;
+            else
+               return "insufficient balance";
+        }
+           
+        getCurrentBalance(){
+             return this.AccountBalance;
+        }
+
+
+      } 
+       saving=new BankAccount(101,"Vrushali",5000);
+       console.log(saving);
+       
+       var balanceOne=saving.withdraw(500);
+       console.log(balanceOne);
+       
+       var balanceTwo=saving.getCurrentBalance();
+       console.log(balanceTwo);
+       
+       current=new BankAccount(102,"Himali",20000);
+       console.log(current);
+       
+       var balanceThree=current.withdraw(600);
+       console.log(balanceThree);
+       
+       var balanceFour=current.getCurrentBalance();
+       console.log(balanceFour);
+
+    </script>
+</body>
+</html>
