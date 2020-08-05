@@ -91,7 +91,7 @@ db.movies.find({ $text: {$search:"Bilbo -Gandalf" } }).pretty()
 }
 
 
-db.movies.find({$text:{$search:"gold dragon"}}).pretty()
+ db.movies.find({$and:[{synopsis:{$regex:"go"}}, {synopsis:{$regex:"dragon"}}]}).pretty()
 {
         "_id" : ObjectId("5f290607f4301a1cdc665f05"),
         "title" : "The Hobbit: An Unexpected Journey",
