@@ -1,0 +1,11 @@
+ db.movies.updateOne({title:"The Hobbit: An Unexpected Journey"},{$set:{synopsis:"A reluctant hobbit,Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and go within it - from the dragon Smaug."}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+ db.movies.updateOne({title:"The Hobbit: The Desolation of Smaug"},{$set:{synopsis:"The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Biblo Baggins is in possesion of a mysterious and magical ring."}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+
+ db.movies.update({title:"Pulp Fiction"},{$set:{actors:["John Travolta","Samuel L. Jackson","Uma Thurman"]}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+

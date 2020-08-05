@@ -1,0 +1,6 @@
+ db.movies.remove({title:"Pee Wee Herman's Big Adventure"})
+WriteResult({ "nRemoved" : 1 })
+
+
+db.movies.remove({title:"Avatar"})
+WriteResult({ "nRemoved" : 1 })
