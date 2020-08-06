@@ -1,0 +1,28 @@
+ db.zipcodes.aggregate([{$group:{_id:{state:"$state"},population:{$avg:"$pop"}}},{$sort:{population:-1}}])
+{ "_id" : { "state" : "DC" }, "population" : 25287.5 }
+{ "_id" : { "state" : "CA" }, "population" : 19627.236147757256 }
+{ "_id" : { "state" : "FL" }, "population" : 15779.407960199005 }
+{ "_id" : { "state" : "RI" }, "population" : 14539.391304347826 }
+{ "_id" : { "state" : "NJ" }, "population" : 14315.162962962962 }
+{ "_id" : { "state" : "HI" }, "population" : 13852.8625 }
+{ "_id" : { "state" : "AZ" }, "population" : 13574.918518518518 }
+{ "_id" : { "state" : "MA" }, "population" : 12692.879746835442 }
+{ "_id" : { "state" : "DE" }, "population" : 12569.207547169812 }
+{ "_id" : { "state" : "CT" }, "population" : 12498.539923954373 }
+{ "_id" : { "state" : "NV" }, "population" : 11556.086538461539 }
+{ "_id" : { "state" : "MD" }, "population" : 11384.235714285714 }
+{ "_id" : { "state" : "NY" }, "population" : 11279.248902821317 }
+{ "_id" : { "state" : "OH" }, "population" : 10771.119165839125 }
+{ "_id" : { "state" : "MI" }, "population" : 10611.069634703197 }
+{ "_id" : { "state" : "GA" }, "population" : 10201.914960629922 }
+{ "_id" : { "state" : "TX" }, "population" : 10164.333333333334 }
+{ "_id" : { "state" : "WA" }, "population" : 10055.148760330578 }
+{ "_id" : { "state" : "SC" }, "population" : 9962.00857142857 }
+{ "_id" : { "state" : "NC" }, "population" : 9402.321985815603 }
+Type "it" for more
+
+
+ db.zipcodes.aggregate([{$group:{_id:{state:"$state"},population:{$avg:"$pop"}}},{$sort:{population:-1}},{$limit:3}])
+{ "_id" : { "state" : "DC" }, "population" : 25287.5 }
+{ "_id" : { "state" : "CA" }, "population" : 19627.236147757256 }
+{ "_id" : { "state" : "FL" }, "population" : 15779.407960199005 }

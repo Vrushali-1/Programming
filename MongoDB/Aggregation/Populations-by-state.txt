@@ -1,0 +1,52 @@
+ db.zipcodes.aggregate([{$group:{_id:"$state",count:{$sum:"$pop"}}}])
+{ "_id" : "NY", "count" : 17990402 }
+{ "_id" : "WI", "count" : 4891769 }
+{ "_id" : "FL", "count" : 12686644 }
+{ "_id" : "VT", "count" : 562758 }
+{ "_id" : "MS", "count" : 2573216 }
+{ "_id" : "DE", "count" : 666168 }
+{ "_id" : "IA", "count" : 2776420 }
+{ "_id" : "AL", "count" : 4040587 }
+{ "_id" : "RI", "count" : 1003218 }
+{ "_id" : "GA", "count" : 6478216 }
+{ "_id" : "NC", "count" : 6628637 }
+{ "_id" : "SD", "count" : 695397 }
+{ "_id" : "LA", "count" : 4217595 }
+{ "_id" : "AZ", "count" : 3665228 }
+{ "_id" : "NM", "count" : 1515069 }
+{ "_id" : "MT", "count" : 798948 }
+{ "_id" : "WV", "count" : 1793146 }
+{ "_id" : "HI", "count" : 1108229 }
+{ "_id" : "WA", "count" : 4866692 }
+{ "_id" : "MI", "count" : 9295297 }
+Type "it" for more
+
+
+ db.zipcodes.aggregate([{$group:{_id:"$state",count:{$sum:"$pop"}}},{$sort:{count:-1}}])
+{ "_id" : "CA", "count" : 29754890 }
+{ "_id" : "NY", "count" : 17990402 }
+{ "_id" : "TX", "count" : 16984601 }
+{ "_id" : "FL", "count" : 12686644 }
+{ "_id" : "PA", "count" : 11881643 }
+{ "_id" : "IL", "count" : 11427576 }
+{ "_id" : "OH", "count" : 10846517 }
+{ "_id" : "MI", "count" : 9295297 }
+{ "_id" : "NJ", "count" : 7730188 }
+{ "_id" : "NC", "count" : 6628637 }
+{ "_id" : "GA", "count" : 6478216 }
+{ "_id" : "VA", "count" : 6181479 }
+{ "_id" : "MA", "count" : 6016425 }
+{ "_id" : "IN", "count" : 5544136 }
+{ "_id" : "MO", "count" : 5110648 }
+{ "_id" : "WI", "count" : 4891769 }
+{ "_id" : "TN", "count" : 4876457 }
+{ "_id" : "WA", "count" : 4866692 }
+{ "_id" : "MD", "count" : 4781379 }
+{ "_id" : "MN", "count" : 4372982 }
+Type "it" for more
+
+
+ db.zipcodes.aggregate([{$group:{_id:"$state",count:{$sum:"$pop"}}},{$sort:{count:-1}},{$limit:3}])
+{ "_id" : "CA", "count" : 29754890 }
+{ "_id" : "NY", "count" : 17990402 }
+{ "_id" : "TX", "count" : 16984601 }
