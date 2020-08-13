@@ -1,7 +1,7 @@
 var fs=require('fs');
 var express=require('express');
 var app=express();
-var name=process.argv[2];
+var name=process.argv[3];
 
 var object;
 var readFile=fs.readFile(name,'utf8',function(err,data){
@@ -13,4 +13,4 @@ app.get('/books',function(req,res){
     res.json(object);
 })
 
-app.listen(3000);
+app.listen(process.argv[2]);

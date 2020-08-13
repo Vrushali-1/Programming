@@ -1,4 +1,4 @@
-
+port=process.env.PORT || 3000;
 var express=require('express');
 
 
@@ -15,5 +15,5 @@ app.get('/time',function(req,res){
     res.render('response2',{time:time.toISOString()});
 })
 
-app.listen(3000);
-console.log('listening to :3000' );
+app.listen(port);
+console.log('listening to : '+port );
