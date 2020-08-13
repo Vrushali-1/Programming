@@ -1,0 +1,12 @@
+.body{
+    background-color: black;
+    text-align: center;
+}
+
+#caption{
+    color: red;
+}
+
+#img{
+    width:600px;
+}
